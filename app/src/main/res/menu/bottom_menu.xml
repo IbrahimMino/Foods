@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+ <item
+  android:title=""
+  android:icon="@drawable/globus"
+  app:showAsAction="always"
+  android:id="@+id/globus"/>
+ <item
+     android:title=""
+     android:icon="@drawable/yurak"
+     app:showAsAction="always"
+     android:id="@+id/favorite"/>
+ <item
+  android:title=""
+  android:id="@+id/point"/>
+ <item
+  android:title=""
+  android:icon="@drawable/alarm"
+  android:id="@+id/alarm"
+  app:showAsAction="always"/>
+ <item
+    android:title=""
+     android:icon="@drawable/ic_person"
+     android:id="@+id/accaunt"
+     app:showAsAction="always"/>
+
+
+
+
+</menu>

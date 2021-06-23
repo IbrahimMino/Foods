@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+    android:background="#838996">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"/>
+    <ImageView
+        android:id="@+id/notes"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_baseline_bookmark_border_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_share_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/notes"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/imgDetails"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/food"
+        app:layout_constraintTop_toBottomOf="@id/share"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/detailsRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.8"
+        android:textColor="@color/mainColor"
+        app:layout_constraintTop_toBottomOf="@id/imgDetails"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"/>
+    <TextView
+        android:id="@+id/tvRatingDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        app:layout_constraintTop_toBottomOf="@id/detailsRating"
+        app:layout_constraintLeft_toLeftOf="@id/detailsRating"
+        app:layout_constraintRight_toRightOf="@id/detailsRating"/>
+
+    <TextView
+        android:id="@+id/detailsSaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="105"
+        android:textColor="@color/mainColor"
+        app:layout_constraintTop_toBottomOf="@id/imgDetails"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toRightOf="@id/detailsRating"
+        app:layout_constraintRight_toLeftOf="@id/detailsOrder"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved"
+
+        app:layout_constraintTop_toBottomOf="@id/detailsSaved"
+        app:layout_constraintLeft_toLeftOf="@id/detailsSaved"
+        app:layout_constraintRight_toRightOf="@id/detailsSaved"/>
+
+
+    <TextView
+        android:id="@+id/detailsOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="375"
+        android:textColor="@color/mainColor"
+        app:layout_constraintTop_toBottomOf="@id/imgDetails"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toRightOf="@id/detailsSaved"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        app:layout_constraintTop_toBottomOf="@id/detailsOrder"
+        app:layout_constraintLeft_toLeftOf="@id/detailsOrder"
+        app:layout_constraintRight_toRightOf="@id/detailsOrder"/>
+
+<LinearLayout
+    android:id="@+id/indicatorContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/tvRatingDetails"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    />
+
+    <TextView
+        android:id="@+id/vegetarian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VEGETARIAN FOODS"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/Main2"
+        app:layout_constraintTop_toBottomOf="@id/indicatorContainer"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/FoodnNameDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Float Cake Vietnam"
+        app:layout_constraintTop_toBottomOf="@id/vegetarian"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textSize="26dp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/img_sale_details"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_sale"
+        app:layout_constraintTop_toBottomOf="@id/indicatorContainer"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+    <TextView
+        android:id="@+id/free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Free\nShip"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintTop_toTopOf="@id/img_sale_details"
+        app:layout_constraintRight_toRightOf="@id/img_sale_details"
+        app:layout_constraintLeft_toLeftOf="@id/img_sale_details"
+        app:layout_constraintBottom_toBottomOf="@id/img_sale_details"
+        android:layout_marginBottom="10dp"
+        tools:layout_editor_absoluteX="126dp" />
+
+    <TextView
+        android:id="@+id/tvLorem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lorem"
+        app:layout_constraintTop_toBottomOf="@id/FoodnNameDetails"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/foodCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01"
+        android:textColor="@color/mainColor"
+        app:layout_constraintTop_toBottomOf="@id/tvLorem"
+        app:layout_constraintLeft_toRightOf="@id/imgDec"
+        android:layout_margin="10dp"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/imgDec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_group_400"
+        app:layout_constraintTop_toBottomOf="@id/tvLorem"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:id="@+id/imgInc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_group_401"
+        app:layout_constraintTop_toBottomOf="@id/tvLorem"
+        app:layout_constraintLeft_toRightOf="@id/foodCount"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+        android:id="@+id/food_price_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$5.78"
+        app:layout_constraintTop_toBottomOf="@id/tvLorem"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="24sp"
+        android:textColor="@color/mainColor"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_add_cart"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="ADD TO CART"
+        app:cornerRadius="40dp"
+        app:icon="@drawable/ic_savat"
+        app:iconGravity="textStart"
+        android:backgroundTint="@color/Main2"
+        app:layout_constraintTop_toBottomOf="@id/imgInc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
